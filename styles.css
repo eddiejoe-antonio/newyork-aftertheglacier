@@ -11,6 +11,7 @@ h1 {
 }
 
 h2 {
+    font-size: 1em;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: lightgrey;
 }
@@ -24,11 +25,11 @@ h4 {
 .opening_text {
     text-transform: uppercase;
     position:fixed;
-    width: 93vw;
+    width: 90vw;
     margin: 2vh;
     z-index: 100;
     background: rgba(0, 0, 0, .5);
-    border: 1vw solid rgba(0, 0, 0, .125);  
+    border: 1.5vw solid rgba(0, 0, 0, .05);  
 }
 
 .description {
@@ -50,5 +51,5 @@ h4 {
 
 #map {
     width: 100vw;
-    height: 104vh;
+    height: 110vh;
 }
