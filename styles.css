@@ -2,18 +2,27 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
+    /* background-color: black; */
+    transition: 0.5s;
+    /* background-image: linear-gradient(rgb(0, 132, 255), white); */
+
+    /* background-image: url('Data/ice_background.png'); */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 h1 {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    color: white;
+    /* color: white; */
 }
 
 h2 {
     font-size: 1em;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    color: lightgrey;
+    /* color: lightgrey; */
 }
 
 h4 {
@@ -23,25 +32,90 @@ h4 {
 }
 
 .opening_text {
-    text-transform: uppercase;
     position:fixed;
-    width: 90vw;
-    margin: 2vh;
+    width: 80vw;
+    margin: 5vh;
     z-index: 100;
-    background: rgba(0, 0, 0, .5);
-    border: 1.5vw solid rgba(0, 0, 0, .05);  
+    /* background: rgba(120,120,120, 1);
+    border: 1.5vw solid rgba(0, 0, 0, .05);   */
+}
+
+.heading {
+    /* writing-mode: vertical-rl;
+    text-orientation: upright; */
+    text-transform: uppercase;
+    -webkit-animation: fadeIn 2.5s;
+    animation: fadeIn 2.5s;
 }
 
 .description {
-    font-size: 0.5em;
+    font-size: 1em;
+    color: #222;
+    -webkit-animation: fadeIn 3.5s;
+    animation: fadeIn 3.5s;
+}
+
+.enter__link {
+    /* writing-mode: vertical-rl;
+    text-orientation: upright; */
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-decoration: none;
+    /* background-color: blue; */
+    border: 3vw solid #fff;
+    box-shadow: 1vw 1vw 1vw #666;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+/** MAP Styles **/
+.map__text {
+    position:fixed;
+    margin: 5vh;
+    width: 90vw;
+    z-index: 100; 
+}
+
+.map__description {
+    font-size: 1em;
+    color: #dedede;
+    -webkit-animation: fadeIn 3.5s;
+    animation: fadeIn 3.5s;
+}
+
+.map__heading {
+    text-transform: uppercase;
+    -webkit-animation: fadeIn 2.5s;
+    animation: fadeIn 2.5s;
+}
+
+.intro__link {
     color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
 }
 
 .mapboxgl-popup-content {
     background-color: #333;
     color:white;
-    z-index: 1000;
     width: 40vw;
+    z-index: auto;
 }
 .popup__img {
     width: 40vw;
@@ -52,4 +126,8 @@ h4 {
 #map {
     width: 100vw;
     height: 110vh;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
+
+
