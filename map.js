@@ -35,11 +35,11 @@ map.on('load', function () {
             'data': 'Data/topo_locations.geojson'
         },
         'paint': {
-            'circle-color': '#ffffff',
-            'circle-radius': 12,
-            "circle-stroke-width": 2,
-            "circle-stroke-color": '#fff',
-            'circle-opacity': 0.25
+            'circle-color': 'blue',
+            'circle-radius': 10,
+            "circle-stroke-width": 1,
+            "circle-stroke-color": 'white',
+            'circle-opacity': 0.375
         }
     }, firstSymbolId);
 });
@@ -50,11 +50,14 @@ map.on('click', 'hilly_locations', function (e) {
     let locationName = e.features[0].properties.Name;
     let descriptionPlace = e.features[0].properties.Description;
     let imageLink = e.features[0].properties.Image;
+    let eventYear = e.features[0].properties.Date;
+    let eventLink = e.features[0].properties.Link;
+
 
 
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
-        .setHTML('<h4>' + locationName  + '</h4>' + '<img class="popup__img" src="' + imageLink + '">' + "<p>" + descriptionPlace + "</p>")
+        .setHTML('<h4>' + locationName  + '</h4>' + '<img class="popup__img" src="' + imageLink + '">' + "<p>" + descriptionPlace + "</p>" + "<p>" + "<a class='map__year' href='"+ eventLink +"'>"  + eventYear + "</a> </p>" ) 
         // .HTML('<p>' + descriptionPlace +'</p>')
         .addTo(map);
 });

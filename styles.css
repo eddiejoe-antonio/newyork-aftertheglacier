@@ -118,11 +118,19 @@ h4 {
     color:white;
     width: 40vw;
     z-index: auto;
+    line-height: 1em;
 }
 .popup__img {
     width: 40vw;
     height: 40vw;
     object-fit: cover;
+}
+
+.map__year {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    color: #dedede;
+    text-decoration: none;
 }
 
 #map {
