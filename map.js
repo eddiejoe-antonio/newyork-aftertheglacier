@@ -35,7 +35,7 @@ map.on('load', function () {
             'data': 'Data/topo_locations.geojson'
         },
         'paint': {
-            'circle-color': 'blue',
+            'circle-color': 'white',
             'circle-radius': 10,
             "circle-stroke-width": 1,
             "circle-stroke-color": 'white',
