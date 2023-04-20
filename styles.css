@@ -1,0 +1,54 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+h1 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: white;
+}
+
+h2 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: lightgrey;
+}
+
+h4 {
+    font-size: 0.75em;
+    line-height: 1.125em;
+    text-transform: uppercase;
+}
+
+.opening_text {
+    text-transform: uppercase;
+    position:fixed;
+    width: 93vw;
+    margin: 2vh;
+    z-index: 100;
+    background: rgba(0, 0, 0, .5);
+    border: 1vw solid rgba(0, 0, 0, .125);  
+}
+
+.description {
+    font-size: 0.5em;
+    color: white;
+}
+
+.mapboxgl-popup-content {
+    background-color: #333;
+    color:white;
+    z-index: 100;
+    width: 40vw;
+}
+.popup__img {
+    width: 40vw;
+    height: 40vw;
+    object-fit: cover;
+}
+
+#map {
+    width: 100vw;
+    height: 100vh;
+}
