@@ -49,6 +49,7 @@ h4 {
 }
 
 .description {
+    margin-top: -1vh;
     font-size: 1em;
     color: #222;
     -webkit-animation: fadeIn 3.5s;
@@ -91,6 +92,7 @@ h4 {
 }
 
 .map__description {
+    margin-top: -1vh;
     font-size: 1em;
     color: #dedede;
     -webkit-animation: fadeIn 3.5s;
