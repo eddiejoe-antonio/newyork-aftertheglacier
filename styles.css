@@ -39,7 +39,7 @@ h4 {
 .mapboxgl-popup-content {
     background-color: #333;
     color:white;
-    z-index: 100;
+    z-index: 1000;
     width: 40vw;
 }
 .popup__img {
@@ -50,5 +50,5 @@ h4 {
 
 #map {
     width: 100vw;
-    height: 100vh;
+    height: 104vh;
 }
