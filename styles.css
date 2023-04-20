@@ -133,3 +133,19 @@ h4 {
 }
 
 
+/** DESKTOP Popup setting **/
+@media (min-width: 600px) {
+    .mapboxgl-popup-content {
+        background-color: #333;
+        color:white;
+        width: 15vw;
+        z-index: auto;
+    }
+    .popup__img {
+        width: 15vw;
+        height: 15vw;
+        object-fit: cover;
+    }
+}
+
+
