@@ -34,7 +34,7 @@ h4 {
 .opening_text {
     position:fixed;
     width: 80vw;
-    margin: 5vh;
+    margin: 3.5vh;
     z-index: 100;
     /* background: rgba(120,120,120, 1);
     border: 1.5vw solid rgba(0, 0, 0, .05);   */
